@@ -9,6 +9,7 @@ _Morse code_ (1832)
 - Industrial Revolution (1760 - 1840)
 
 ![](fig/telegraph-1.jpg)![](fig/telegraph-2.jpg)
+
 _Telegraph_
 - 1844, Morse sent his first telegraph message from Washington D.C. to Baltimore Maryland.
 - 1866, Telegraph line across the Atlantic Ocean from the US to Europe. 
@@ -20,12 +21,15 @@ _Radio_
 - James Clerk Maxwell (1864), mathematically proved the electormagnetic waves could propagate through free space.
 - Heinrich Hertz (1886), establish the existence of electormagnetic waves.
 
-_Wireless Telegraph_
-
 _Telephone_
 - Alexander Graham Bell (1876)
 
+_Wireless Telegraph_
+- Guglielmo Marconi (1895) build wireless telegraph, win Noble Prize in Physics at 1909.
+- Nikola Tesla (1893) demo radio communication.
+
 _Television_
+- 1929, BBC.
 
 _Wireless Telephone_
 - 1946, Push-to-Talk (one way)
