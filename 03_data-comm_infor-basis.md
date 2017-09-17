@@ -14,3 +14,43 @@ __Claude Shannon__ (1916-2001)
 - Expected value: probability weighted average.
 
 # Information basis
+- A communication system is arm to transmit information. Each message conveys some information; some information conveys more information than other.
+- The amount of information is the time of the message transmission, therefore we use shorter code to for larger probability messages.
+- The amount of information depends on the probability of occurrence of the event.
+
+       EX: 
+       - The sum will rise in east tomorrow.
+       - It will rain tomorrow.
+        
+> Information from intuitive point of view:
+>
+> If I is the amount of information of a message m and P is the probability of occurrence of that event then mathematically, 
+>
+> __I = 0; if P = 1,__
+>
+> __I = &infin;; if P = 0__
+>
+> To hold above relation, the relation between I and P will be,
+>
+> __I = log<sub>2</sub>(1/P)__   	
+>
+> In information theory base of the logarithmic function is 2.
+
+> If communication source generate messages m<sub>1</sub>, m<sub>2</sub>, m<sub>3</sub>, ..., m<sub>k</sub> with probability of occurrence P<sub>1</sub>, P<sub>2</sub>, P<sub>3</sub>, ..., P<sub>k</sub>, and if the probability of messages are independent, then the probability of the composite message is
+>
+> __P = P<sub>1</sub>P<sub>2</sub>P<sub>3</sub>...P<sub>k</sub>__
+>
+> The information carried by the composite message is
+>
+> __I = log<sub>2</sub>(1/P)__
+>
+>   __= log<sub>2</sub>(1/P<sub>1</sub>P<sub>2</sub>P<sub>3</sub>...P<sub>k</sub>)__
+>
+>   __= log<sub>2</sub>(1/P<sub>1</sub>) + log<sub>2</sub>(1/P<sub>2</sub>) + ... + log<sub>2</sub>(1/P<sub>k</sub>)__
+>
+>   __= I<sub>1</sub> + I<sub>2</sub> + ... + I<sub>k</sub>__
+>
+
+The information __I__ is inverse to the probability __P__, less probability produce more information.
+
+The more efficient communication system need to transmit more messages in a range of time (if the channel capacity is fixed), then we need to encode the message as less as possible. 
