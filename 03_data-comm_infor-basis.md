@@ -8,5 +8,7 @@ __Claude Shannon__ (1916-2001)
 - P(A+B) = P(A) + P(B) if A and B are mutually exclusive, i.e. P(AB) = 0.
 - P(A+B) = P(A) + P(B) - P(AB)
 - Independent events: P(AB) = P(A)P(B)
-- Conditional probability: P(A|B) = \frac{P(AB)}{P(B)}
+- Conditional probability: P(A|B) = P(AB)/P(B)
 - Expected value: probability weighted average.
+
+# Information basis
