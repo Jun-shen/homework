@@ -16,7 +16,7 @@ __Claude Shannon__ (1916-2001)
 # Information basis
 - A communication system arm to transmit information from source to receiver. Each message conveys some information; some information conveys more information than other.
 - The amount of information is the time of the message transmission, larger information spend more time to transfer.
-- The amount of information depends on the probability of occurrence of the event.
+- The amount of information depends on the probability of occurrence of the event (not depends on its contain).
 
        EX: 
        - The sum will rise in east tomorrow.
@@ -62,4 +62,8 @@ The information __I__ is inverse to the probability __P__, less probability prod
 The more efficient communication system need to transmit more messages in a range of time (if the channel capacity _bits/sec_ is fixed), then we need to encode the message as less as possible. I.e. more probability event use smaller codeword; less probability event use larger codeword. More probability event has less information; less probability have more information.
 
 __Central idea of information theory is that messages of a source has to be coded in such a way that maximum amount of information can be transmitted through the channel of limited capacity.__
+
+# Entropy
+- Average information
+> __H = &Sigma;(i=1..k) P<sub>i</sub>log<sub>2</sub>(1/P<sub>i</sub>)__
 
