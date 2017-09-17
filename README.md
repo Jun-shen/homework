@@ -14,7 +14,7 @@ Communication Networks:
 Fundamental challenges:
 - _Reliablity_
 - _Sharing_
-- Scalability_
+- _Scalability_
 
 ----
 
