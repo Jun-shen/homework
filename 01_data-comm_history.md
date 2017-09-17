@@ -20,6 +20,8 @@ _Flag Semaphore_
 _Radio_
 - James Clerk Maxwell (1864), mathematically proved the electormagnetic waves could propagate through free space.
 - Heinrich Hertz (1886), establish the existence of electormagnetic waves.
+- AM (1906)
+- FM (1933)
 
 _Telephone_
 - Alexander Graham Bell (1876)
@@ -33,6 +35,7 @@ _Television_
 
 _Wireless Telephone_
 - 1946, Push-to-Talk (one way)
+- 1948, Claude Shannon _"A Mathematical theory of communication"_
 - 1960, two way.
 
 _1G: Advanced Mobile Phone System (AMPS)_
