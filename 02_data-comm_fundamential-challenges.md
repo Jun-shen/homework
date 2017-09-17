@@ -21,4 +21,4 @@ Solution: shared media
 ## Scalability
 Problem: multi-hop networks
 
-Solution: switch technology
+Solution: routing (switch) technology
