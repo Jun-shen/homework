@@ -5,13 +5,13 @@ Data forms:
 
     the information (messages) wish to transmit.
 
-    How to present information: encode, compress and decode?
+    How to present information: encode, compress and decode?
     
 - _Packets_ 
 
     break the message for transmission over network.
 
-    How networking?
+    How networking?
     
 - _Bits_
 
