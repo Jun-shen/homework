@@ -14,8 +14,8 @@ __Claude Shannon__ (1916-2001)
 - Expected value: probability weighted average.
 
 # Information basis
-- A communication system is arm to transmit information. Each message conveys some information; some information conveys more information than other.
-- The amount of information is the time of the message transmission, therefore we use shorter code to for larger probability messages.
+- A communication system arm to transmit information from source to receiver. Each message conveys some information; some information conveys more information than other.
+- The amount of information is the time of the message transmission, larger information spend more time to transfer.
 - The amount of information depends on the probability of occurrence of the event.
 
        EX: 
@@ -53,4 +53,13 @@ __Claude Shannon__ (1916-2001)
 
 The information __I__ is inverse to the probability __P__, less probability produce more information.
 
-The more efficient communication system need to transmit more messages in a range of time (if the channel capacity is fixed), then we need to encode the message as less as possible. 
+> Information from engineering view:
+>
+> The amount of information in a message is proportional to the time required to transmit the message. 
+>
+> Therefore the message with smaller probability of occurrence needs long code word and that of larger probability need shorter codeword. 
+
+The more efficient communication system need to transmit more messages in a range of time (if the channel capacity _bits/sec_ is fixed), then we need to encode the message as less as possible. I.e. more probability event use smaller codeword; less probability event use larger codeword. More probability event has less information; less probability have more information.
+
+__Central idea of information theory is that messages of a source has to be coded in such a way that maximum amount of information can be transmitted through the channel of limited capacity.__
+
