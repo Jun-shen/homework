@@ -4,6 +4,7 @@ __Claude Shannon__ (1916-2001)
 
 ![](fig/shannon_comm_channel.jpg)
 
+
 # Probabilistic basis
 - _Events_ are subsets of outcomes. Event defines probability.
 - 0 &le; P(A) &le; 1
@@ -12,6 +13,7 @@ __Claude Shannon__ (1916-2001)
 - Independent events: P(AB) = P(A)P(B)
 - Conditional probability: P(A|B) = P(AB)/P(B)
 - Expected value: probability weighted average.
+
 
 # Information basis
 - A communication system arm to transmit information from source to receiver. Each message conveys some information; some information conveys more information than other.
@@ -58,6 +60,7 @@ The more efficient communication system need to transmit more messages in a rang
 
 __Central idea of information theory is that messages of a source has to be coded in such a way that maximum amount of information can be transmitted through the channel of limited capacity.__
 
+
 ## Entropy
 - Average information
 > __H = &Sigma;{i=1..k} P<sub>i</sub>log<sub>2</sub>(1/P<sub>i</sub>)__
@@ -78,13 +81,24 @@ __Central idea of information theory is that messages of a source has to be code
 >
 > Ans:
 >
-> H = (1/2)log<sub>2</sub>(2)+ (1/8)log2(8)+ (1/8)log2(8)+ (1/4)log2(4) = 1/2+3/8+3/8+1/2 = 7/4 bits/message.
+> H = (1/2)log<sub>2</sub>(2) + (1/8)log<sub>2</sub>(8) + (1/8)log<sub>2</sub>(8) + (1/4)log<sub>2</sub>(4) <br>
+>  = 1/2 + 3/8 +3/8 + 1/2 <br>
+>  = 7/4 (bits/message).
 
 > Question 2:
 >
-> 
+> Determine the entropy of above example (question 1), if the probability of above messages (in question 1) are equally.
 
 
 ## Information Rate
 - Average entropy per symbol (bits/sec)
 > __R = symbol rate (message/sec) * entropy__
+
+> Question 3:
+>
+> There are 256 possible messages which have the same occurrence probability, and the system symbol rate is 8KHz (8 * 10<sup>3</sup>). What is the information rate?
+> 
+> Ans:
+>
+> Entropy (H) = 256 * (1/256) * log<sub>2</sub>(256) = 8 (bits/sample)
+> Information Rate (R) = 8 * 10<sup>3</sup> = 64 * 10<sup>3</sup> (bits/sec) = 64Kbps.
