@@ -26,8 +26,7 @@ __Claude Shannon__ (1916-2001)
 >
 > If I is the amount of information of a message m and P is the probability of occurrence of that event then mathematically, 
 >
-> __I = 0; if P = 1,__
->
+> __I = 0; if P = 1,__ <br>
 > __I = &infin;; if P = 0__
 >
 > To hold above relation, the relation between I and P will be,
@@ -42,14 +41,10 @@ __Claude Shannon__ (1916-2001)
 >
 > The information carried by the composite message is
 >
-> __I = log<sub>2</sub>(1/P)__
->
->   __= log<sub>2</sub>(1/P<sub>1</sub>P<sub>2</sub>P<sub>3</sub>...P<sub>k</sub>)__
->
->   __= log<sub>2</sub>(1/P<sub>1</sub>) + log<sub>2</sub>(1/P<sub>2</sub>) + ... + log<sub>2</sub>(1/P<sub>k</sub>)__
->
+> __I = log<sub>2</sub>(1/P)__ <br>
+>   __= log<sub>2</sub>(1/P<sub>1</sub>P<sub>2</sub>P<sub>3</sub>...P<sub>k</sub>)__ <br>
+>   __= log<sub>2</sub>(1/P<sub>1</sub>) + log<sub>2</sub>(1/P<sub>2</sub>) + ... + log<sub>2</sub>(1/P<sub>k</sub>)__ <br>
 >   __= I<sub>1</sub> + I<sub>2</sub> + ... + I<sub>k</sub>__
->
 
 The information __I__ is inverse to the probability __P__, less probability produce more information.
 
@@ -65,5 +60,12 @@ __Central idea of information theory is that messages of a source has to be code
 
 # Entropy
 - Average information
-> __H = &Sigma;(i=1..k) P<sub>i</sub>log<sub>2</sub>(1/P<sub>i</sub>)__
+> __H = &Sigma;{i=1..k} P<sub>i</sub>log<sub>2</sub>(1/P<sub>i</sub>)__
 
+> EX: <br>
+> Let an information source can generate messages (alphabet or word) _m<sub>1</sub>, m<sub>2</sub>,..., m<sub>k</sub>_ with probability of occurrences _p<sub>1</sub>, p<sub>2</sub>,..., p<sub>k</sub>_. If there were send _L_ messages (sentence) in a duration of time, therefore the number of symbols of _m<sub>1</sub>, m<sub>2</sub>,..., m<sub>k</sub>_ are _Lp<sub>1</sub>, Lp<sub>2</sub>,..., Lp<sub>k</sub>_. <br>
+> Now the total information of _m<sub>1</sub>, m<sub>2</sub>,..., m<sub>k</sub>_ is <br>
+> _I<sub>T</sub> = Lp<sub>1</sub>log(1/p<sub>1</sub>) + Lp<sub>2</sub>log(1/p<sub>2</sub>) + ... + Lp<sub>k</sub>log(1/p<sub>3</sub>)_ <br>
+> = &Sigma;{i=1..k} Lp<sub>i</sub>log(1/p<sub>i</sub>)_ <br>
+> So the average information (H) is <br>
+> __H = I<sub>T</sub>/L = &Sigma;{i=1..k} P<sub>i</sub>log<sub>2</sub>(1/P<sub>i</sub>)__
