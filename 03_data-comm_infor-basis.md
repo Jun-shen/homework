@@ -66,6 +66,6 @@ __Central idea of information theory is that messages of a source has to be code
 > Let an information source can generate messages (alphabet or word) _m<sub>1</sub>, m<sub>2</sub>,..., m<sub>k</sub>_ with probability of occurrences _p<sub>1</sub>, p<sub>2</sub>,..., p<sub>k</sub>_. If there were send _L_ messages (sentence) in a duration of time, therefore the number of symbols of _m<sub>1</sub>, m<sub>2</sub>,..., m<sub>k</sub>_ are _Lp<sub>1</sub>, Lp<sub>2</sub>,..., Lp<sub>k</sub>_. <br>
 > Now the total information of _m<sub>1</sub>, m<sub>2</sub>,..., m<sub>k</sub>_ is <br>
 > _I<sub>T</sub> = Lp<sub>1</sub>log(1/p<sub>1</sub>) + Lp<sub>2</sub>log(1/p<sub>2</sub>) + ... + Lp<sub>k</sub>log(1/p<sub>3</sub>)_ <br>
-> = &Sigma;{i=1..k} Lp<sub>i</sub>log(1/p<sub>i</sub>)_ <br>
+> _= &Sigma;{i=1..k} Lp<sub>i</sub>log(1/p<sub>i</sub>)_ <br>
 > So the average information (H) is <br>
 > __H = I<sub>T</sub>/L = &Sigma;{i=1..k} P<sub>i</sub>log<sub>2</sub>(1/P<sub>i</sub>)__
