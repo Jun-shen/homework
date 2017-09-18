@@ -100,5 +100,5 @@ __Central idea of information theory is that messages of a source has to be code
 > 
 > Ans:
 >
-> Entropy (H) = 256 * (1/256) * log<sub>2</sub>(256) = 8 (bits/sample)
+> Entropy (H) = 256 * (1/256) * log<sub>2</sub>(256) = 8 (bits/sample) <br>
 > Information Rate (R) = 8 * 10<sup>3</sup> = 64 * 10<sup>3</sup> (bits/sec) = 64Kbps.
