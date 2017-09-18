@@ -1,6 +1,6 @@
 # Evolution of Communication
 
-_Somke, Pigeon, Pony Express_
+_Smoke, Pigeon, Pony Express_
 
 ![](fig/morsecode.gif)
 
