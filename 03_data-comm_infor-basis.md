@@ -42,7 +42,7 @@ __Claude Shannon__ (1916-2001)
 > The information carried by the composite message is
 >
 > __I = log<sub>2</sub>(1/P)__ <br>
->   __= log<sub>2</sub>(1/P<sub>1</sub>P<sub>2</sub>P<sub>3</sub>...P<sub>k</sub>)__ <br>
+>   __= log<sub>2</sub>(1/(P<sub>1</sub>P<sub>2</sub>P<sub>3</sub>...P<sub>k</sub>))__ <br>
 >   __= log<sub>2</sub>(1/P<sub>1</sub>) + log<sub>2</sub>(1/P<sub>2</sub>) + ... + log<sub>2</sub>(1/P<sub>k</sub>)__ <br>
 >   __= I<sub>1</sub> + I<sub>2</sub> + ... + I<sub>k</sub>__
 
@@ -58,14 +58,33 @@ The more efficient communication system need to transmit more messages in a rang
 
 __Central idea of information theory is that messages of a source has to be coded in such a way that maximum amount of information can be transmitted through the channel of limited capacity.__
 
-# Entropy
+## Entropy
 - Average information
 > __H = &Sigma;{i=1..k} P<sub>i</sub>log<sub>2</sub>(1/P<sub>i</sub>)__
 
 > EX: <br>
 > Let an information source can generate messages (alphabet or word) _m<sub>1</sub>, m<sub>2</sub>,..., m<sub>k</sub>_ with probability of occurrences _p<sub>1</sub>, p<sub>2</sub>,..., p<sub>k</sub>_. If there were send _L_ messages (sentence) in a duration of time, therefore the number of symbols of _m<sub>1</sub>, m<sub>2</sub>,..., m<sub>k</sub>_ are _Lp<sub>1</sub>, Lp<sub>2</sub>,..., Lp<sub>k</sub>_. <br>
+>
 > Now the total information of _m<sub>1</sub>, m<sub>2</sub>,..., m<sub>k</sub>_ is <br>
-> _I<sub>T</sub> = Lp<sub>1</sub>log(1/p<sub>1</sub>) + Lp<sub>2</sub>log(1/p<sub>2</sub>) + ... + Lp<sub>k</sub>log(1/p<sub>3</sub>)_ <br>
-> _= &Sigma;{i=1..k} Lp<sub>i</sub>log(1/p<sub>i</sub>)_ <br>
+> _I<sub>T</sub> = Lp<sub>1</sub>log(1/p<sub>1</sub>) + Lp<sub>2</sub>log(1/p<sub>2</sub>) + ... + Lp<sub>k</sub>log(1/p<sub>k</sub>)_ <br>
+>  _= &Sigma;{i=1..k} Lp<sub>i</sub>log(1/p<sub>i</sub>)_ <br>
+>
 > So the average information (H) is <br>
 > __H = I<sub>T</sub>/L = &Sigma;{i=1..k} P<sub>i</sub>log<sub>2</sub>(1/P<sub>i</sub>)__
+
+> Question 1:
+>
+> An information source generates four messages m1, m2, m3 and m4 with probabilities of 1/2, 1/8, 1/8 and 1/4 respectively. Determine entropy of the system.
+>
+> Ans:
+>
+> H = (1/2)log<sub>2</sub>(2)+ (1/8)log2(8)+ (1/8)log2(8)+ (1/4)log2(4) = 1/2+3/8+3/8+1/2 = 7/4 bits/message.
+
+> Question 2:
+>
+> 
+
+
+## Information Rate
+- Average entropy per symbol (bits/sec)
+> __R = symbol rate (message/sec) * entropy__
