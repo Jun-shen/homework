@@ -1,6 +1,7 @@
 __Claude Shannon__ (1916-2001)
 - 1937, MIT EE master thesis "A symbolic analysis of relay and switching circuits", introduce Boolean algebra to logic circuits.
 - 1948, Bell Lab, "A mathematical theory of communication".
+    - Shannon theorems, the coding theorem: "If the information rate of a given source does not exceed the capacity of a given channel, then there exist a coding technique that makes possible transmission through this unreliable channel with an arbitrarily low error rate.".
 
 ![](fig/shannon_comm_channel.jpg)
 
@@ -17,6 +18,11 @@ __Claude Shannon__ (1916-2001)
 
 # Information basis
 - A communication system arm to transmit information from source to receiver. Each message conveys some information; some information conveys more information than other.
+- Information theory is concerned with the fundamental limits of communication.
+    - What is the ultimate limit to data compression?
+    - How many bits can be sent per second over a channel?
+- Information theory tries to analysis communication between a transmitter and receiver through an unreliable channel.
+    - the amount of information produced by a given source
 - The amount of information is the time of the message transmission, larger information spend more time to transfer.
 - The amount of information depends on the probability of occurrence of the event (not depends on its contain).
 
