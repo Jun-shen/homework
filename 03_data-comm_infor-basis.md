@@ -98,6 +98,7 @@ __Central idea of information theory is that messages of a source has to be code
 
 ## Information Rate
 - Average entropy per symbol (bits/sec)
+- Needs how many bits to transmit a message (a number of symbols)
 > __R = symbol rate (message/sec) * entropy__
 
 > Question 3:
@@ -108,3 +109,11 @@ __Central idea of information theory is that messages of a source has to be code
 >
 > Entropy (H) = 256 * (1/256) * log<sub>2</sub>(256) = 8 (bits/sample) <br>
 > Information Rate (R) = 8 * 10<sup>3</sup> = 64 * 10<sup>3</sup> (bits/sec) = 64Kbps.
+
+> Question 4:
+>
+> We want to send a 1000 messages which only contain 4 sympols (m1, m2, m3, m4), if the probability of m1, m2, m3 and m4 are as described in Q1, i.e. the entropy is 7/4 = 1.75 bits, then 1000 messages needs 1750 bits.
+>
+> If the probability of m1, m2, m3 and m4 are euqally (as Q2), then how much bits we need to transmit this 1000 messages?
+
+We will see different information rate for the same message which has different entropy.
