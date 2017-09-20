@@ -13,12 +13,12 @@
     - Code word length is fixed.
 - Variable Length Codes
     - Code work lenght is not fixed.
-- Distincit Codes
+- Distinct Codes
     - Each code word is distinguishable from each other. 
 - Prefix Free Codes
     - No code word is prefix of another.
 - Uniquely Decodable Codes
-    - A distincit code is uniquely decodable if the original source sequece can be reconstructed from the encoded sequence.
+    - A distinct code is uniquely decodable if the original source sequece can be reconstructed from the encoded sequence.
 - Instantaneous Codes
     - A uniquely decodable code if the end of any code word is recognizable without examining subsequence code symbols. (Prefix Free Codes)
 - Optimal Codes
