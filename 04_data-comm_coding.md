@@ -3,6 +3,13 @@
 - If send not enough bits, the receiver will have some uncertainty in the message.
 - If send two much bit, we will wast the capacity of the communication channel.
 
+# The digital communication system model
+- Communication systems convert the source output into a binary sequence and then convert that binary sequence into a form suitable for transmission over particular physical media such as cable, twisted wire pair, optical fiber, or electromagnetic radiation through space.
+- Digital communication systems use digital sequence as an interface between the source and the channel input and between the channel output and final destination.
+- The source encoder converts the source output to a binary sequence and the channel encoder (often called a modulator) processes the binary sequence for transmission over the channel. The channel decoder (demodulator) recreates the incoming binary sequence (hopefully reliably), and the source decoder recreates the source output.
+
+![](fig/digi-comm-1.png)
+
 # The Source Coding
 - A conversion of a discrete memory less source (DMS) into a sequence of binary symbols.
     - DMS: independent probability
