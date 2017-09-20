@@ -48,3 +48,4 @@ Textbook:
 - Behrouz A. Forouzan / Data Communications and Networking
 
 Reference:
+- <a href="https://en.wikipedia.org/wiki/A_Mathematical_Theory_of_Communication">Claude E. Shannon, A Mathematical Theory of Communication (1948)</a>
