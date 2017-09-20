@@ -1,3 +1,10 @@
+News:
+- <a href="http://pansci.asia/archives/124494"> 1909年的諾貝爾物理奬——長距離無線電通訊 </a>
+- <a href="https://github.com/cnchenpu/data-comm/wiki/Bluetooth-Mesh"> Bluetooth Mash </a>
+- <a href="https://www.armis.com/blueborne/"> The IoT Attack Vector “BlueBorne” Exposes Almost Every Connected Device </a>
+
+----
+
 Data Communications and Networking is arm to introduce the principle of data communications, information transportations and computer network architectures. This course is the foundation about how to build computer network and design communication system.
 
 Data forms:
