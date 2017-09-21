@@ -30,9 +30,10 @@ __EX: The communication system for waveform information__
     - Source encoding for analog sources involves a trade-off between the quantization bit rate and the amount of distortion.
 
 # The Source Coding
+- The mapping of information we wish to transmit or store in bit sequence.
 - A conversion of a discrete memory less source (DMS) into a sequence of binary symbols.
     - DMS: independent probability
-- To minimize the average bit rate required for representation of the source by reducing the redundancy of the information source.
+- To minimize the average bit rate required for representation of the source by reducing the redundancy (i.e. compress data) of the information source.
 - Shannon showed that the source entropy is equal to the minimum number of binary digits per source symbol required to map the source output into binary digits.
 
 # Classification of Code:
