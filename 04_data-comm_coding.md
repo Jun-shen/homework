@@ -10,7 +10,7 @@
 
 ![](fig/digi-comm-1.png)
 
-EX: The communication system for waveform information
+__EX: The communication system for waveform information__
 - The source coding/decoding layer can be split into 3 layers:
     - sampler/analog filter
         - The input side of the outermost layer converts the waveform into a sequence of samples and output side converts the recovered samples back to the waveform.
@@ -42,7 +42,7 @@ EX: The communication system for waveform information
 - Optimal Codes
     - An instantaneous code and has the minimum average length for a given source.
 
-EX:
+__EX:__
 
 |Xi|Code 1|Code 2|Code 3|Code 4|Code 5|Code 6|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
