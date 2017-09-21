@@ -38,7 +38,7 @@ __EX: The communication system for waveform information__
 # Classification of Code:
 - Fixed Length Codes
     - Code word length is fixed.
-    - EX: 4 digits for Hexadecimal codes.
+    - EX: 4 digits for Hexadecimal codes. 7 bits ASCII for 96 print characters.
 - Variable Length Codes
     - Code work lenght is not fixed.
     - Depends on the probability of symbols.
@@ -51,9 +51,7 @@ __EX: The communication system for waveform information__
     - Every fixed-length code with distinct codewords is prefix-free.
     - Represent in binary code tree.
     - EX: <br>
-    &nbsp;&nbsp;&nbsp;/ b -> 11 <br>
-    &nbsp;/\\/ c -> 101 <br>
-    &nbsp;\ a -> 0 <br>
+    ![](fig/prefix-free.png)
 - Uniquely Decodable Codes
     - A distinct code is uniquely decodable if the original source sequece can be reconstructed from the encoded sequence.
 - Instantaneous Codes
@@ -61,8 +59,7 @@ __EX: The communication system for waveform information__
 - Optimal Codes
     - An instantaneous code and has the minimum average length for a given source.
 
-__EX:__
-
+## EX:
 |Xi|Code 1|Code 2|Code 3|Code 4|Code 5|Code 6|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |X1|00|00|0|0|0|1|
@@ -71,7 +68,7 @@ __EX:__
 |X4|11|11|11|111|0111|0001|
 
 
-# Homework (due date: 10/2)
+## Homework (due date: 10/2)
 1. Identify the _prefix free_ code and draw the decision tree.
 
 |Xi|Code 1|Code 2|Code 3|Code 4|
