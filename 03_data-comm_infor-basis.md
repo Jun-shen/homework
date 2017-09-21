@@ -5,6 +5,7 @@ __Claude Shannon__ (1916-2001)
 
 ![](fig/shannon_comm_channel.jpg)
 
+_Shannon’s view, was that if the recipient knows that a sine wave of a given frequency is to be communicated, why not simply regenerate it at the output rather than send it over a long distance? Or, if the recipient knows that a sine wave of unknown frequency is to be communicated, why not simply send the frequency rather than the entire waveform?_
 
 # Probabilistic basis
 - _Events_ are subsets of outcomes. Event defines probability.
