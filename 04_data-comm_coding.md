@@ -10,6 +10,17 @@
 
 ![](fig/digi-comm-1.png)
 
+EX: The communication system for waveform information
+- The source coding/decoding layer can be split into 3 layers:
+    - sampler/analog filter
+        - The input side of the outermost layer converts the waveform into a sequence of samples and output side converts the recovered samples back to the waveform.
+    - quantizer/table lookup
+        - The quantizer converts each sample into one of a finite set of symbols, and the peer module recreates the sample.
+    - discrete encoder/decoder
+        - To encode the sequence of symbols into binary digits and decode vice versa.
+        
+![](fig/digi-comm-2.png)
+
 # The Source Coding
 - A conversion of a discrete memory less source (DMS) into a sequence of binary symbols.
     - DMS: independent probability
