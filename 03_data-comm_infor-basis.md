@@ -92,7 +92,7 @@ __Central idea of information theory is that messages of a source has to be code
 >  = 1/2 + 3/8 +3/8 + 1/2 <br>
 >  = 7/4 (bits/message).
 
-> Question 2:
+> Question 2 __(Homework, due date: 9/25)__
 >
 > Determine the entropy of above example (question 1), if the probability of above messages (in question 1) are equally.
 
