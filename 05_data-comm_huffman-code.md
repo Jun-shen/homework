@@ -66,7 +66,7 @@ Transmitting the message (1000 symbols) in 1666 binary digits in average __(not 
     5. Add a new symbol into __S__ that represent this new node and combine their probabilities (__p(s<sub>i</sub>) + p(s<sub>j</sub>)__).
 
 # Homework (due date: 10/2)
-2. Consider following symbols, compute a) the Huffman code, b) draw the code tree, c) the average code length, and d) the entropy of the code. <br>
+2. Consider following symbols, compute __a)__ the Huffman code, __b)__ draw the code tree, __c)__ the average code length, and __d)__ the entropy of the code. <br>
 {(A, 0.25), (B, 0.25), (C, 0.125), (D, 0.125), (E, 0.125), (F, 0.0625), (G, 0.0625)}
 
 # Program Project (due date: 10/16)
