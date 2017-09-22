@@ -2,6 +2,12 @@ Notes:
 - Every week has a homework and the due date is before next class.
 - Homework must submit to your github repository.
 
+- <a href="https://github.com/cnchenpu/data-comm/blob/master/03_data-comm_infor-basis.md#entropy"> Homework 1</a>, due date: 9/25.
+- Homework 2, due date: 10/2.
+    - <a href="https://github.com/cnchenpu/data-comm/blob/master/04_data-comm_coding.md#homework-due-date-102"> 1. </a>
+    - <a href="https://github.com/cnchenpu/data-comm/blob/master/05_data-comm_huffman-code.md#homework-due-date-102"> 2. </a>
+- <a href="https://github.com/cnchenpu/data-comm/blob/master/05_data-comm_huffman-code.md#program-project-due-date-1016"> Project 1</a>, due date: 10/16.
+
 ----
 
 News:
