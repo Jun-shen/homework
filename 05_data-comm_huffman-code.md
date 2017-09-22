@@ -41,7 +41,7 @@ Transmitting the message (1000 symbols) in 1666 binary digits in average __(not 
 - How to build the code tree:
     1. S = {(A, 1/3), (B, 1/2), (C, 1/12), (D, 1/12)}
     2. S = {(A, 1/3), (B, 1/2), (CD, 1/6)}
-    3. S = {(B, 1/2), (ACD, 1/2(}
+    3. S = {(B, 1/2), (ACD, 1/2)}
     4. S = {(BACD, 1)}
     
 &nbsp;&nbsp;&nbsp;&nbsp;CD <br>
@@ -58,3 +58,21 @@ Transmitting the message (1000 symbols) in 1666 binary digits in average __(not 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;0/&nbsp;&nbsp;\1 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;&nbsp;&nbsp;&nbsp;D <br>
 
+- Huffman Code Algorithm
+    1. Begin with the set of symbols __S__, put the probability __p(s)__ for each __s__ in __S__.
+    2. Repeat the following steps until there is only 1 symbol left in __S__:
+    3. Choose two members __(s<sub>i</sub>, s<sub>j</sub>)__ from __S__ which have lowest probabilities.
+    4. Remove the selected symbols from __S__, and create a new node of the code tree whose childen are the symbols you have removed __(s<sub>i</sub>, s<sub>j</sub>)__. Label the left sibling with code __0__, and the right sibling with code __1__.
+    5. Add a new symbol into __S__ that represent this new node and combine their probabilities (__p(s<sub>i</sub>) + p(s<sub>j</sub>)__).
+
+# Homework (due date: 10/2)
+2. Consider following symbols, compute a) the Huffman code, b) draw the code tree, c) the average code length, and d) the entropy of the code. <br>
+{(A, 0.25), (B, 0.25), (C, 0.125), (D, 0.125), (E, 0.125), (F, 0.0625), (G, 0.0625)}
+
+# Program Project (due date: 10/16)
+- Use any programming language you like to output the Huffman code of Homework 2.
+    - Input: {(A, 0.25), (B, 0.25), (C, 0.125), (D, 0.125), (E, 0.125), (F, 0.0625), (G, 0.0625)}
+    - Output: The Huffman code for each symboles.
+- Bonus 1: Draw the code tree.
+- Bonus 2: A general purpose version of Huffman code generater, i.e. user can input a finite set of symbols and their probabilities, then output their Huffman codes.
+- Your work have to submit to your github which includes source code, outputs and a brief of your ideas in README.
