@@ -23,4 +23,38 @@ One of the goal of communication system is efficient sharing of the communicatio
 
 Shannon showed the _expected code length_ of any uniquely decodable code cannot be smaller then the _entropy, H_ of the symbols. Thus an _optimal code_ will have an _expected code length_ that matches the _entropy_ for the messages.
 
-__The _Optimal Code_ is 
+# Huffman Code
+- David Huffman (1951)
+- Use shorter bit sequence for high probability symbol, longer sequences for less probale symbol.
+
+|S<sub>i</sub>|P<sub>i</sub>|Code|
+|:---:|:---:|:---:|
+|A|1/3|10|
+|B|1/2|0|
+|C|1/12|110|
+|D|1/12|111|
+
+Expected length = 1/3 * 2 + 1/2 * 1 + 1/12 * 3 + 1/12 * 3 = 1.666 bits
+
+Transmitting the message (1000 symbols) in 1666 binary digits in average __(not optimal)__.
+
+- How to build the code tree:
+    1. S = {(A, 1/3), (B, 1/2), (C, 1/12), (D, 1/12)}
+    2. S = {(A, 1/3), (B, 1/2), (CD, 1/6)}
+    3. S = {(B, 1/2), (ACD, 1/2(}
+    4. S = {(BACD, 1)}
+    
+&nbsp;&nbsp;&nbsp;&nbsp;CD <br>
+&nbsp;&nbsp;0/&nbsp;&nbsp;\1 <br>
+&nbsp;&nbsp;C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D <br>
+
+&nbsp;&nbsp;&nbsp;ACD <br>
+&nbsp;&nbsp;0/&nbsp;&nbsp;&nbsp;\1 <br>
+&nbsp;A&nbsp;&nbsp;&nbsp;0/&nbsp;&nbsp;\1 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D <br>
+
+&nbsp;&nbsp;0/&nbsp;&nbsp;&nbsp;\1 <br>
+&nbsp;B&nbsp;&nbsp;&nbsp;0/&nbsp;&nbsp;\1 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;0/&nbsp;&nbsp;\1 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;&nbsp;&nbsp;&nbsp;D <br>
+
