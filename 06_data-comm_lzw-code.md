@@ -74,3 +74,5 @@ __WHILE__ there are still input symbols __DO__ <br>
 __END__ <br>
 output the code for STRING <br>
 
+## Homework (due date: 10/2)
+Use LZW algorithm to encode "thisisthe".
