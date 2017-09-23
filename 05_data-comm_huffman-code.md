@@ -83,7 +83,7 @@ ___H = &Sigma;{_i_=1:_N_} _p<sub>i</sub>log<sub>2</sub>(1/p<sub>i</sub>)____
 
 = 0.35 * 1.515 + 0.2 * 2.322 + 0.2 * 2.322 + 0.15 * 2.737 + 0.1 * 3.322 = 2.2019 bits.
 
-___H <= L < H + 1___
+___H &le; L < H+1___
 
 ## Huffman Code Algorithm
     1. Begin with the set of symbols __S__, put the probability __p(s)__ for each __s__ in __S__.
