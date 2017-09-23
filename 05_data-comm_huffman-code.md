@@ -18,7 +18,7 @@ __Our goal of _Source Coding_ is to produce as few bits as possible__
 
 One of the goal of communication system is efficient sharing of the communication links among different users or conversations, so the ability to send data as few bits as possible is necessary.
 
-__Expected code length__
+### Expected code length
 
 Given _N_ symbols, with symbol _i_ occurring with probability _p<sub>i</sub>_, if we have a code in which symbol _i_ has length _l<sub>i</sub>_ in the code tree (i.e., the codeword is _l<sub>i</sub>_ bits long), then the expected length of the code, _L_, is &Sigma;{_i_=1:_N_} _p<sub>i</sub>l<sub>i</sub>_.
 
@@ -39,7 +39,7 @@ Expected length = 1/3 * 2 + 1/2 * 1 + 1/12 * 3 + 1/12 * 3 = 1.666 bits
 
 Transmitting the message (1000 symbols) in 1666 binary digits in average __(not optimal)__.
 
-- How to build the code tree:
+## How to build the code tree:
     1. S = {(A, 1/3), (B, 1/2), (C, 1/12), (D, 1/12)}
     2. S = {(A, 1/3), (B, 1/2), (CD, 1/6)}
     3. S = {(B, 1/2), (ACD, 1/2)}
@@ -59,18 +59,35 @@ Transmitting the message (1000 symbols) in 1666 binary digits in average __(not 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;0/&nbsp;&nbsp;\1 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;&nbsp;&nbsp;&nbsp;D <br>
 
-- Huffman Code Algorithm
+### Another example:
+_p_ = {0.35, 0.2, 0.2, 0.15, 0.1}
+
+|title|_s<sub>1</sub>_|_s<sub>2</sub>_|_s<sub>3</sub>_|_s<sub>4</sub>_|_s<sub>5</sub>_|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|_p(x)l(x)_|0.7|0.4|0.4|0.45|0.3|
+|_l(x)_|2|2|2|3|3|
+|_c(x)_|00|10|11|010|011|
+|_p(x)_|0.35|0.2|0.2|0.15|0.1|
+|      |    | \  |/  |\   | / |
+|      |    |0.4|   |0.25 |   |
+|      | \  |   |   | /  |    |
+|      | 0.6|   |   |    |    |
+|      | \  | / |   |    |    |
+|      | 1  |   |   |    |    |
+
+
+## Huffman Code Algorithm
     1. Begin with the set of symbols __S__, put the probability __p(s)__ for each __s__ in __S__.
     2. Repeat the following steps until there is only 1 symbol left in __S__:
     3. Choose two members __(s<sub>i</sub>, s<sub>j</sub>)__ from __S__ which have lowest probabilities.
     4. Remove the selected symbols from __S__, and create a new node of the code tree whose childen are the symbols you have removed __(s<sub>i</sub>, s<sub>j</sub>)__. Label the left sibling with code __0__, and the right sibling with code __1__.
     5. Add a new symbol into __S__ that represent this new node and combine their probabilities (__p(s<sub>i</sub>) + p(s<sub>j</sub>)__).
 
-# Homework (due date: 10/2)
+## Homework (due date: 10/2)
 2. Consider following symbols, compute __a)__ the Huffman code, __b)__ draw the code tree, __c)__ the average code length, and __d)__ the entropy of the code. <br>
 {(A, 0.25), (B, 0.25), (C, 0.125), (D, 0.125), (E, 0.125), (F, 0.0625), (G, 0.0625)}
 
-# Program Project (due date: 10/16)
+## Program Project (due date: 10/16)
 - Use any programming language you like to output the Huffman code of Homework 2.
     - Input: {(A, 0.25), (B, 0.25), (C, 0.125), (D, 0.125), (E, 0.125), (F, 0.0625), (G, 0.0625)}
     - Output: The Huffman code for each symboles.
