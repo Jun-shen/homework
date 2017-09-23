@@ -37,6 +37,8 @@ Use 8 bits for coding, the table size is 2<sup>8</sup>=256.
 
 Initialize table: first 256 entries (0 ~ 255) hold ASCII codes of symbol.
 
+- encode:
+
 |Current|Next|Output|Add to dictionay|Comments|
 |:---:|:---:|:---:|:---:|:---|
 |a 97|b 98|a 97|ab 256|'ab' not exist, add it to table|
