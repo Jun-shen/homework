@@ -11,7 +11,7 @@
     
 ## Example
 
-abcabcabcabcabcabcabc
+- abbbabbbab
 
 Use 8 bits for coding, the table size is 2<sup>8</sup>=256.
 
@@ -19,20 +19,41 @@ Initialize table: first 256 entries (0 ~ 255) hold ASCII codes of symbol.
 
 |Current|Next|Output|Add to dictionay|Comments|
 |:---:|:---:|:---:|:---:|:---|
-|a 97|b 98|a 97|ab 256|add 'ab' to table|
-|b 98|c 99|b 98|bc 257|add 'bc' to table|
-|c 99|a 97|c 99|ca 258|add 'ca' to table|
-|a 97|b 98|-|-|'ab' exists in table,<br>check if 'abc' in table|
+|a 97|b 98|a 97|ab 256|'ab' not exist, add it to table|
+|b 98|b 98|b 98|bb 257|'bb' not exist, add it to table|
+|b 98|b 98|-|-|'bb' exist in table, 'bba' not exist|
+|bb 257|a 97|bb 257|bba 258|add 'bba' to table|
+|a 97|b 98|-|-|'ab' exist in table, 'abb' not exist|
+|ab 256|b 98|ab 256|abb 259|add 'abb' to table|
+|b 98|b 98|-|-|'bb' exist in table, 'bba' exist to, 'bbab' not|
+|bba 258|b 98|bba 258|bbab 260|add 'bbab' to table|
+|b 98|-|b 98|-|end|
+
+
+## Example
+
+- abcabcabcabcabcabcabc
+
+Use 8 bits for coding, the table size is 2<sup>8</sup>=256.
+
+Initialize table: first 256 entries (0 ~ 255) hold ASCII codes of symbol.
+
+|Current|Next|Output|Add to dictionay|Comments|
+|:---:|:---:|:---:|:---:|:---|
+|a 97|b 98|a 97|ab 256|'ab' not exist, add it to table|
+|b 98|c 99|b 98|bc 257|'bc' not exist, add it to table|
+|c 99|a 97|c 99|ca 258|'ca' not exist, add it to table|
+|a 97|b 98|-|-|'ab' exists in table, 'abc' not|
 |ab 256|c 99|ab 256|abc 259|add 'abc' to table|
-|c 99|a 97|-|-|'ca' exists in table,<br>check if 'cab' in table|
+|c 99|a 97|-|-|'ca' exists in table, 'cab' not|
 |ca 258|b 98|ca 258|cab 260|add 'cab' to table|
-|b 98|c 99|-|-|'bc' exists in table,<br>check if 'bca' in table|
+|b 98|c 99|-|-|'bc' exists in table, 'bca' not|
 |bc 257|a 97|bc 257|bca 261|add 'bca' to table|
-|a 97|b 98|-|-|'ab' exists in table,<br>'abc' exists in table,<br>check if 'abca' in table|
+|a 97|b 98|-|-|'ab' exists in table, 'abc' exists too, 'abca' not|
 |abc 259|a 97|abc 259|abca 262|add 'abca' in table|
-|a 97|b 98|-|-|'ab' exists in table,<br>'abc' exists in table,<br>'abca' exist in table, <br>check if 'abcab' in table|
+|a 97|b 98|-|-|'ab' exists in table, so does 'abc' and 'abca', 'abcab' not|
 |abca 262|b 98|abca 262|abcab 263|add 'abcab' in table|
-|b 98|c 99|-|-|'bc' exists in table,<br>'bca' exist in table,<br>check if 'bcab' in table|
+|b 98|c 99|-|-|'bc' exists in table, bca' exist too, 'bcab' not|
 |bca 261|b 98|bca 261|bcab 263|add 'bcab' to table|
 |b 98|c 99|-|-|'bc' exist in table|
 |bc 257|-|bc 257|-|end|
