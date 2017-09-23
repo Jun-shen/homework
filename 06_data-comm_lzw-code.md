@@ -11,7 +11,7 @@
     
 ## Example
 
-- abbbabbbab
+- source: abbbabbbab
 
 Use 8 bits for coding, the table size is 2<sup>8</sup>=256.
 
@@ -29,10 +29,11 @@ Initialize table: first 256 entries (0 ~ 255) hold ASCII codes of symbol.
 |bba 258|b 98|bba 258|bbab 260|add 'bbab' to table|
 |b 98|-|b 98|-|end|
 
+- code: 97, 98, 257, 256, 258, 98.
 
 ## Example
 
-- abcabcabcabcabcabcabc
+- source: abcabcabcabcabcabcabc
 
 Use 8 bits for coding, the table size is 2<sup>8</sup>=256.
 
@@ -58,3 +59,4 @@ Initialize table: first 256 entries (0 ~ 255) hold ASCII codes of symbol.
 |b 98|c 99|-|-|'bc' exist in table|
 |bc 257|-|bc 257|-|end|
 
+- code: 97, 98, 99, 256, 258, 257, 259, 262, 261, 257.
