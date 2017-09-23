@@ -59,7 +59,7 @@ Transmitting the message (1000 symbols) in 1666 binary digits in average __(not 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;0/&nbsp;&nbsp;\1 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;&nbsp;&nbsp;&nbsp;D <br>
 
-### Another example:
+## Example:
 _p_ = {0.35, 0.2, 0.2, 0.15, 0.1}
 
 |title|_s<sub>1</sub>_|_s<sub>2</sub>_|_s<sub>3</sub>_|_s<sub>4</sub>_|_s<sub>5</sub>_|
@@ -84,6 +84,24 @@ ___H = &Sigma;{_i_=1:_N_} _p<sub>i</sub>log<sub>2</sub>(1/p<sub>i</sub>)____
 = 0.35 * 1.515 + 0.2 * 2.322 + 0.2 * 2.322 + 0.15 * 2.737 + 0.1 * 3.322 = 2.2019 bits.
 
 ___H &le; L < H+1___
+
+
+## Another example:
+_p_ = {0.3, 0.2, 0.1, 0.1, 0.1, 0.1, 0.1}
+
+|title|_s<sub>1</sub>_|_s<sub>2</sub>_|_s<sub>3</sub>_|_s<sub>4</sub>_|_s<sub>5</sub>_|_s<sub>6</sub>_|_s<sub>7</sub>_|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|_p(x)l(x)_|0.7|0.4|0.4|0.45|0.3|
+|_l(x)_| | | | | | | |
+|_c(x)_| | | | | | | |
+|_p(x)_|0.3|0.2|0.1|0.1|0.1|0.1|0.1|
+|      | \ |0\ |/1 |0\ |/1 |0\ |/1 |
+|      | \ |0.3|   |0.2|   |0.2|   |
+|      | 0\| /1|   |0\ |   |/1 |   |
+|      |0.6|   |   |   |0.4|   |   |
+|      |0\ |   |   |   |/1 |   |   |
+|      |   |1.0|   |   |   |   |   |
+
 
 ## Huffman Code Algorithm
     1. Begin with the set of symbols __S__, put the probability __p(s)__ for each __s__ in __S__.
