@@ -109,6 +109,10 @@ ___H = &Sigma;{_i_=1:_N_} _p<sub>i</sub>log<sub>2</sub>(1/p<sub>i</sub>)____
 
 = 0.3 * 1.736 + 0.2 * 2.236 + 0.1 * 3.165 + 0.1 * 3.165 + 0.1 * 3.165 + 0.1 * 3.165 + 0.1 * 3.165 = 2.55 bits
 
+___H &le; L < H+1___
+
+
+
 ## Huffman Code Algorithm
     1. Begin with the set of symbols __S__, put the probability __p(s)__ for each __s__ in __S__.
     2. Repeat the following steps until there is only 1 symbol left in __S__:
