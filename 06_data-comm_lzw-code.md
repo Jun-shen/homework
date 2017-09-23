@@ -1,4 +1,4 @@
-# Lempel-Ziv-Welch (LZW) Algorithm
+# Lempel-Ziv-Welch (LZW) Compress Coding
 - Lempel-Ziv-Welch (1977,’78,’84)
 - Adaptive variable-length coding.
 - Don't need the statistic (probability) infomation of the source.
@@ -60,3 +60,34 @@ Initialize table: first 256 entries (0 ~ 255) hold ASCII codes of symbol.
 |bc 257|-|bc 257|-|end|
 
 - code: 97, 98, 99, 256, 258, 257, 259, 262, 261, 257.
+
+# LZW Algorithm
+## LZW Encoding
+STRING = get input symbol <br>
+__WHILE__ there are still input symbols __DO__ <br>
+    SYMBOL = get input symbol <br>
+    __IF__ STRING + SYMBOL is in the STRINGTABLE __THEN__ <br>
+        STRING = STRING + SYMBOL <br>
+    __ELSE__ <br>
+        output the code for STRING <br>
+        add STRING + SYMBOL to STRINGTABLE <br>
+        STRING = SYMBOL <br>
+    __END__ <br>
+__END__ <br>
+output the code for STRING <br>
+
+## LZW Decoding
+Read CODE  // CODE as table index
+STRING = TABLE[CODE]  // dictionary table
+__WHILE__ there are still codes to receive __DO__
+    Read CODE from encoder
+    __IF__ CODE is not in the table __THEN__
+        ENTRY = STRING + STRING[0]
+    __ELSE__
+        ENTRY = get translation of CODE
+    __END__
+    output ENTRY
+    add STRING+ENTRY[0] to the translation table
+    STRING = ENTRY
+__END__
+
