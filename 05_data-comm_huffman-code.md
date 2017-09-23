@@ -37,7 +37,7 @@ Shannon showed the _expected code length_ of any uniquely decodable code cannot 
 
 Expected length = 1/3 * 2 + 1/2 * 1 + 1/12 * 3 + 1/12 * 3 = 1.666 bits
 
-Transmitting the message (1000 symbols) in 1666 binary digits in average __(not optimal)__.
+Transmitting the message (1000 symbols) in 1666 binary digits in average.
 
 ## How to build the code tree:
     1. S = {(A, 1/3), (B, 1/2), (C, 1/12), (D, 1/12)}
