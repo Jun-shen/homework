@@ -10,7 +10,6 @@
     - __Table size = 2<sup>N</sup>__.
     
 ## Example
-
 - source: abbbabbbab
 
 Use 8 bits for coding, the table size is 2<sup>8</sup>=256.
@@ -32,7 +31,6 @@ Initialize table: first 256 entries (0 ~ 255) hold ASCII codes of symbol.
 - code: 97, 98, 257, 256, 258, 98.
 
 ## Example
-
 - source: abcabcabcabcabcabcabc
 
 Use 8 bits for coding, the table size is 2<sup>8</sup>=256.
@@ -62,7 +60,7 @@ Initialize table: first 256 entries (0 ~ 255) hold ASCII codes of symbol.
 - code: 97, 98, 99, 256, 258, 257, 259, 262, 261, 257.
 
 # LZW Algorithm
-## LZW Encoding
+
 STRING = get input symbol <br>
 __WHILE__ there are still input symbols __DO__ <br>
 &nbsp;&nbsp;&nbsp;&nbsp;SYMBOL = get input symbol <br>
@@ -75,19 +73,4 @@ __WHILE__ there are still input symbols __DO__ <br>
 &nbsp;&nbsp;&nbsp;&nbsp;__END__ <br>
 __END__ <br>
 output the code for STRING <br>
-
-## LZW Decoding
-Read CODE  // CODE as table index <br> 
-STRING = TABLE[CODE]  // dictionary table <br>
-__WHILE__ there are still codes to receive __DO__ <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Read CODE from encoder <br>
-&nbsp;&nbsp;&nbsp;&nbsp;__IF__ CODE is not in the table __THEN__ <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ENTRY = STRING + STRING[0] <br>
-&nbsp;&nbsp;&nbsp;&nbsp;__ELSE__ <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ENTRY = get translation of CODE <br>
-&nbsp;&nbsp;&nbsp;&nbsp;__END__ <br>
-&nbsp;&nbsp;&nbsp;&nbsp;output ENTRY <br>
-&nbsp;&nbsp;&nbsp;&nbsp;add STRING+ENTRY[0] to the translation table <br>
-&nbsp;&nbsp;&nbsp;&nbsp;STRING = ENTRY <br>
-__END__ <br>
 
