@@ -100,6 +100,7 @@ Determine the entropy of above example (question 1), if the probability of above
 ## Information Rate
 - Average entropy per symbol (bits/sec)
 - Needs how many bits to transmit a message (a number of symbols)
+
 __R = symbol rate (message/sec) * entropy__
 
 __Question 3:__
