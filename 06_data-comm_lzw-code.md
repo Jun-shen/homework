@@ -65,14 +65,14 @@ Initialize table: first 256 entries (0 ~ 255) hold ASCII codes of symbol.
 ## LZW Encoding
 STRING = get input symbol <br>
 __WHILE__ there are still input symbols __DO__ <br>
-    SYMBOL = get input symbol <br>
-    __IF__ STRING + SYMBOL is in the STRINGTABLE __THEN__ <br>
-        STRING = STRING + SYMBOL <br>
-    __ELSE__ <br>
-        output the code for STRING <br>
-        add STRING + SYMBOL to STRINGTABLE <br>
-        STRING = SYMBOL <br>
-    __END__ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;SYMBOL = get input symbol <br>
+&nbsp;&nbsp;&nbsp;&nbsp;__IF__ STRING + SYMBOL is in the TABLE __THEN__ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STRING = STRING + SYMBOL <br>
+&nbsp;&nbsp;&nbsp;&nbsp;__ELSE__ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;output the code for STRING <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add STRING + SYMBOL to TABLE <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STRING = SYMBOL <br>
+&nbsp;&nbsp;&nbsp;&nbsp;__END__ <br>
 __END__ <br>
 output the code for STRING <br>
 
@@ -80,14 +80,14 @@ output the code for STRING <br>
 Read CODE  // CODE as table index
 STRING = TABLE[CODE]  // dictionary table
 __WHILE__ there are still codes to receive __DO__
-    Read CODE from encoder
-    __IF__ CODE is not in the table __THEN__
-        ENTRY = STRING + STRING[0]
-    __ELSE__
-        ENTRY = get translation of CODE
-    __END__
-    output ENTRY
-    add STRING+ENTRY[0] to the translation table
-    STRING = ENTRY
+&nbsp;&nbsp;&nbsp;&nbsp;Read CODE from encoder
+&nbsp;&nbsp;&nbsp;&nbsp;__IF__ CODE is not in the table __THEN__
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ENTRY = STRING + STRING[0]
+&nbsp;&nbsp;&nbsp;&nbsp;__ELSE__
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ENTRY = get translation of CODE
+&nbsp;&nbsp;&nbsp;&nbsp;__END__
+&nbsp;&nbsp;&nbsp;&nbsp;output ENTRY
+&nbsp;&nbsp;&nbsp;&nbsp;add STRING+ENTRY[0] to the translation table
+&nbsp;&nbsp;&nbsp;&nbsp;STRING = ENTRY
 __END__
 
