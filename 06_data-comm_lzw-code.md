@@ -77,17 +77,17 @@ __END__ <br>
 output the code for STRING <br>
 
 ## LZW Decoding
-Read CODE  // CODE as table index
-STRING = TABLE[CODE]  // dictionary table
-__WHILE__ there are still codes to receive __DO__
-&nbsp;&nbsp;&nbsp;&nbsp;Read CODE from encoder
-&nbsp;&nbsp;&nbsp;&nbsp;__IF__ CODE is not in the table __THEN__
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ENTRY = STRING + STRING[0]
-&nbsp;&nbsp;&nbsp;&nbsp;__ELSE__
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ENTRY = get translation of CODE
-&nbsp;&nbsp;&nbsp;&nbsp;__END__
-&nbsp;&nbsp;&nbsp;&nbsp;output ENTRY
-&nbsp;&nbsp;&nbsp;&nbsp;add STRING+ENTRY[0] to the translation table
-&nbsp;&nbsp;&nbsp;&nbsp;STRING = ENTRY
-__END__
+Read CODE  // CODE as table index <br> 
+STRING = TABLE[CODE]  // dictionary table <br>
+__WHILE__ there are still codes to receive __DO__ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Read CODE from encoder <br>
+&nbsp;&nbsp;&nbsp;&nbsp;__IF__ CODE is not in the table __THEN__ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ENTRY = STRING + STRING[0] <br>
+&nbsp;&nbsp;&nbsp;&nbsp;__ELSE__ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ENTRY = get translation of CODE <br>
+&nbsp;&nbsp;&nbsp;&nbsp;__END__ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;output ENTRY <br>
+&nbsp;&nbsp;&nbsp;&nbsp;add STRING+ENTRY[0] to the translation table <br>
+&nbsp;&nbsp;&nbsp;&nbsp;STRING = ENTRY <br>
+__END__ <br>
 
