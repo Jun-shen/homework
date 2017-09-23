@@ -53,7 +53,7 @@ Initialize table: first 256 entries (0 ~ 255) hold ASCII codes of symbol.
 |a 97|b 98|-|-|'ab' exists in table, so does 'abc' and 'abca', 'abcab' not|
 |abca 262|b 98|abca 262|abcab 263|add 'abcab' in table|
 |b 98|c 99|-|-|'bc' exists in table, bca' exist too, 'bcab' not|
-|bca 261|b 98|bca 261|bcab 263|add 'bcab' to table|
+|bca 261|b 98|bca 261|bcab 264|add 'bcab' to table|
 |b 98|c 99|-|-|'bc' exist in table|
 |bc 257|-|bc 257|-|end|
 
@@ -75,4 +75,4 @@ __END__ <br>
 output the code for STRING <br>
 
 ## Homework (due date: 10/2)
-Use LZW algorithm to encode "thisisthe".
+Use LZW algorithm to encode "abcabcabcabcabcabcabcabcabcabcabcabc".
