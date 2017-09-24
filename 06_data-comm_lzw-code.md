@@ -78,3 +78,11 @@ output the code for STRING <br>
 
 ## Homework (due date: 10/2)
 Use LZW algorithm to encode "abcabcabcabcabcabcabcabcabcabcabcabc".
+
+# Compression Ratio
+Compression Ratio = Uncompress Size / Compress Size
+
+Data Saving = 1 - (Compress Size / Uncompress Size)
+
+
+
