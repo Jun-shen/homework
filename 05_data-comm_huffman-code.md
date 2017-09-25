@@ -114,11 +114,11 @@ ___H &le; L < H+1___
 
 
 ## Huffman Code Algorithm
-    1. Begin with the set of symbols __S__, put the probability __p(s)__ for each __s__ in __S__.
-    2. Repeat the following steps until there is only 1 symbol left in __S__:
-    3. Choose two members __(s<sub>i</sub>, s<sub>j</sub>)__ from __S__ which have lowest probabilities.
-    4. Remove the selected symbols from __S__, and create a new node of the code tree whose childen are the symbols you have removed __(s<sub>i</sub>, s<sub>j</sub>)__. Label the left sibling with code __0__, and the right sibling with code __1__.
-    5. Add a new symbol into __S__ that represent this new node and combine their probabilities (__p(s<sub>i</sub>) + p(s<sub>j</sub>)__).
+1. Begin with the set of symbols __S__, put the probability __p(s)__ for each __s__ in __S__.
+2. Repeat the following steps until there is only 1 symbol left in __S__:
+3. Choose two members __(s<sub>i</sub>, s<sub>j</sub>)__ from __S__ which have lowest probabilities.
+4. Remove the selected symbols from __S__, and create a new node of the code tree whose childen are the symbols you have removed __(s<sub>i</sub>, s<sub>j</sub>)__. Label the left sibling with code __0__, and the right sibling with code __1__.
+5. Add a new symbol into __S__ that represent this new node and combine their probabilities (__p(s<sub>i</sub>) + p(s<sub>j</sub>)__).
 
 ## Homework (due date: 10/2)
 2. Consider following symbols, compute __a)__ the Huffman code, __b)__ draw the code tree, __c)__ the average code length, and __d)__ the entropy of the code. <br>
