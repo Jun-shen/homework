@@ -1,4 +1,5 @@
 # Channel Capacity
+Channel Capacity is defined as the maximum amount information a channel can convey per unit time. 
 
 ## Data Rate Limits
 The maximum data rate limit over a medium is decided by followinf factors:
