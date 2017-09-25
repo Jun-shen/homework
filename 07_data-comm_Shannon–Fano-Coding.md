@@ -14,7 +14,7 @@ __Expected code length (L) = 2.38 bits/symbol__
 
 __Entropy (H) = 2.36 bits/symbol__
 
-### Code Efficiency = H / L
+## Code Efficiency = H / L
 __H/L = 2.36/2.38 = 0.99__
 
 # Shannon–Fano Algorithm
@@ -41,4 +41,4 @@ __Entropy (H) = 0.3 * 1.736 + 0.2 * 2.236 + 0.1 * 3.165 + 0.1 * 3.165 + 0.1 * 3.
 
 __Code Efficiency (H/L) = 2.55/3.3 = 0.77__
 
-### Question: Compare to this Huffman code example:[https://github.com/cnchenpu/data-comm/blob/master/05_data-comm_huffman-code.md#example].
+### Question: Compare to this Huffman code [example](https://github.com/cnchenpu/data-comm/blob/master/05_data-comm_huffman-code.md#example).
