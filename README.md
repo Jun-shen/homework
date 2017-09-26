@@ -7,6 +7,8 @@
 - Homework 2, due date: 10/2.
     - <a href="https://github.com/cnchenpu/data-comm/blob/master/04_data-comm_coding.md#homework-due-date-102"> 1. </a>
     - <a href="https://github.com/cnchenpu/data-comm/blob/master/05_data-comm_huffman-code.md#homework-due-date-102"> 2. </a>
+    - <a href="https://github.com/cnchenpu/data-comm/blob/master/06_data-comm_lzw-code.md#homework-due-date-102"> 3. </a>
+<br>    
 - <a href="https://github.com/cnchenpu/data-comm/blob/master/05_data-comm_huffman-code.md#program-project-due-date-1016"> Project 1</a>, due date: 10/16.
 
 # News:
