@@ -19,9 +19,20 @@ __Packets -> Bits -> Signals -> Bits -> Packets__
 
 # Map Bits to Signals
 - Voltage __V0__ for bit __0__; __V1__ for bit __1__.
-- The bigger range of input voltage, the bigger tolerance of uncertainty.
+- The bigger range of input voltage, or the longer period of time that voltage hold, the bigger tolerance of uncertainty.
 - The boundary between __0__ and __1__ ((V0+V1)/2) calls the _threshold voltage_, __V<sub>th</sub>__.
 - The receiver can output any value when the input voltage is in the 'range' of __V<sub>th</sub>__.
+
+# Sender and Receiver synchronization
+The peer of sender and receiver need to aggree the same _sample rate_ and _clock rate_ in communication. <br>
+Both the sender and receiver use its internal clock to determine when to generate or acquire the next voltage sample. And both use counters to keep track of how many samples there are in each bit. <br>
+If their clock don't exactly match, for example, the sender sending 5 samples per bit, but receiver's clock is a little slower, the receiver will seems to be transmitting faster, it may receive 4.999 samples per bit.
+- __Sample Rate__: The number of samples per second.
+- __Clock Rate__: The number of clock cycle per second __(Hz)__.
+    
+![](fig/sample-interval.png)
+
+![](fig/transmit-samples.png)
 
 # Channel Capacity
 Channel Capacity is defined as the maximum amount information a channel can convey per unit time. 
