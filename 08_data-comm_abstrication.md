@@ -8,6 +8,21 @@ __Packets -> Bits -> Signals -> Bits -> Packets__
     - Analog phone convert sound wave to electrical signal and back.
 - Transmitting over an optical communication link, we can send signal in different intensities and/or wavelength.
 
+# But digital is better for communication
+- Easy to modularize and build large system.
+- Digital data processing technique can improve the quality and performance of the system.
+
+# There is no error-free communication channel
+- tolerance of internal components
+- environmental factors: temperature, power supply votlage
+- interference from other transmissions
+
+# Map Bits to Signals
+- Voltage __V0__ for bit __0__; __V1__ for bit __1__.
+- The boundary between __0__ and __1__ ((V0+V1)/2) calls the _threshold voltage_, __V<sub>th</sub>__.
+- The bigger range of input voltage, the bigger tolerance of uncertainty.
+- The receiver can output any value when the input voltage is in the 'range' of __V<sub>th</sub>__.
+
 # Channel Capacity
 Channel Capacity is defined as the maximum amount information a channel can convey per unit time. 
 
