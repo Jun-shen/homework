@@ -54,3 +54,4 @@ where:
 > Information Rate (R) = Sample Rate * Entropy = (sample/sec) * (bits/sample) <br>
 > C = 2B * log<sub>2</sub>&radic;(1+S/N) <br>
 > = 1/2 * 2B * log<sub>2</sub>(1+S/N) <br>
+> = B * log<sub>2</sub>(1+S/N)
