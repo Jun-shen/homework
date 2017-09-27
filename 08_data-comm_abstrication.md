@@ -45,9 +45,12 @@ The maximum data rate limit over a medium is decided by followinf factors:
 - Channel quality (level of noise)
 
 ## Shannon Capacity (Noisy Channel)
-__C = BW * log<sub>2</sub>(1+S/N)__
+__C = B * log<sub>2</sub>(1+S/N)__
 
 where:
 - C: Channel capacity (bits per second)
-- BW: Bandwidth of channel
-- S/N: signal to noise ratio
+- B: Bandwidth of channel (Hz)
+- S/N: signal to noise ratio, S: received signal, N: noise
+> Information Rate (R) = Sample Rate * Entropy = (sample/sec) * (bits/sample)
+> C = 2B * log<sub>2</sub>&squr;(1+S/N)
+> = 1/2 * 2B * log<sub>2</sub>(1+S/N)
