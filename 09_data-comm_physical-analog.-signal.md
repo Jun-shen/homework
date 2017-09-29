@@ -1,9 +1,9 @@
 # Sine Wave
 ![](fig/sine-wave.png)
 
-- peak amplitude (__V__olt)
-- period (__T__ime, second)
-- frequency (__f__requence, Hz)
+- peak amplitude (Volt)
+- period (Time, second)
+- frequency (frequence, Hz)
     - f=1/T, T=1/f
 - phase (degree)
 - wavelength (speed*period = speed/frequency)
