@@ -1,4 +1,4 @@
-# Communication Network Abstrication
+# Communication Channel Abstrication
 ![](/fig/digi-comm-2.png)
 __Packets -> Bits -> Signals -> Bits -> Packets__
 
@@ -34,6 +34,10 @@ __Packets -> Bits -> Signals -> Bits -> Packets__
 
 ![](fig/transmit-samples.png)
 
+# Communication Channel
+A channel is viewed in terms of its possible inputs (_x_), its possible outpus (_y_), and how the input affect the output (_P(y|x)_).
+
+![](fig/DMChannel/png)
 
 # Channel Capacity
 Channel Capacity is defined as the maximum amount information a channel can convey per unit time. 
