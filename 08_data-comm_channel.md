@@ -41,14 +41,9 @@ A channel is viewed in terms of its possible inputs (_x_), its possible outpus (
 
 ![](fig/DMChannel.png)
 
-# Binary Symmetric Channel
-- BSC has two inputs (x<sub>1</sub> = 0 and x<sub>2</sub> = 1) and two outpus (y<sub>1</sub> = 0 and y<sub>2</sub> = 1).
-- This channel is symmetric because the probability of receiving a '__1__' if a '__0__' is send is the same as the probability of receiving a '__0__' if a '__1__' is send.
-
-![](fig/BSChannel.gif)
-
 # Channel Capacity
-Channel Capacity is defined as the maximum amount information a channel can convey per unit time. 
+The channel capacity represents the maximum amount of information that can be transmitted by a channel per second.
+> Information Rate (R): (symbols per second) * (information bits per symbol)
 
 ## Data Rate Limits
 The maximum data rate limit over a medium is decided by followinf factors:
