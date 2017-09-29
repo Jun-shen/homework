@@ -1,5 +1,6 @@
 # Communication Channel Abstrication
 ![](/fig/digi-comm-2.png)
+
 __Packets -> Bits -> Signals -> Bits -> Packets__
 
 # Analog signal is nature
