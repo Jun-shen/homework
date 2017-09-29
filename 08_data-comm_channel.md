@@ -37,8 +37,15 @@ __Packets -> Bits -> Signals -> Bits -> Packets__
 
 # Communication Channel
 A channel is viewed in terms of its possible inputs (_x_), its possible outpus (_y_), and how the input affect the output (_P(y|x)_).
+- _P(y|x)_ is the _conditional probability_ of _y_ when given the _x_.
 
-![](fig/DMChannel/png)
+![](fig/DMChannel.png)
+
+# Binary Symmetric Channel
+- BSC has two inputs (x<sub>1</sub> = 0 and x<sub>2</sub> = 1) and two outpus (y<sub>1</sub> = 0 and y<sub>2</sub> = 1).
+- This channel is symmetric because the probability of receiving a '__1__' if a '__0__' is send is the same as the probability of receiving a '__0__' if a '__1__' is send.
+
+![](fig/BSChannel.gif)
 
 # Channel Capacity
 Channel Capacity is defined as the maximum amount information a channel can convey per unit time. 
