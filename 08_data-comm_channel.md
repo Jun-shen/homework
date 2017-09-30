@@ -47,9 +47,9 @@ The channel capacity represents the maximum amount of information that can be tr
 
 ## Data Rate Limits
 The maximum data rate limit over a medium is decided by followinf factors:
-- __B__andwidth of channel (the range of frequency)
-- __S__ignal power levels 
-- Channel quality (level of noise)
+- __B__ Bandwidth of channel (the range of frequency)
+- __S__ Signal power levels 
+- __N__ Channel quality (level of noise)
 
 ## Shannon Capacity (Noisy Channel)
 __C = B * log<sub>2</sub>(1+S/N)__ bits/s
