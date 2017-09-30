@@ -5,17 +5,19 @@
 ## Sine Wave
 ![](fig/sine-wave.png)
 
-- peak amplitude (Volt) 
-    - highest energy intensity
-- period (Time, second) 
-    - how many seconds of a signal needs to complete 1 cycle
-- frequency (frequence, Hz)
-    - the number of periods in 1 second
+- peak amplitude (__A__) 
+    - highest energy intensity (volt)
+- period (__T__) 
+    - how many seconds for a cycle of a signal
+- frequency (___f___)
+    - the number of periods in 1 second (Hz)
     - f=1/T, T=1/f
 - phase (degree)
-    - the position of the waveform relative to time 0
-- wavelength (speed*period = speed/frequency)
-    - &lambda;=c/f
+    - the position of the waveform relative to time 0 (horizontal shifting)
+- wavelength 
+    - the length of a cycle of wave in a medium
+    - propagration speed * period = propagration speed / frequency
+    - &lambda;=c/f, c: speed of light (3 * 10<sup>8</sup> m/s)
 
 ## Time and Frequency Domain
 ![](fig/time-freq-domain.png)
