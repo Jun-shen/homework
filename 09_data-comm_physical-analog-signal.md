@@ -12,12 +12,9 @@
 - frequency (___f___)
     - the number of periods in 1 second (Hz)
     - f=1/T, T=1/f
-    > EX: 
-    >
-    > The period of home electricity supply (60 Hz) is
-    >
-    > T = 1/60 = 0.0166 seconds = 16.6 ms
-    >
+    > EX: <br>
+    > The period of home electricity supply (60 Hz) is <br>
+    > T = 1/60 = 0.0166 seconds = 16.6 ms <br>
     > Our eyes can't detect so quick power change.
 - phase (degree)
     - the position of the waveform relative to time 0 (horizontal shifting)
@@ -58,9 +55,7 @@ __A composite signal is a combination of simple sine waves with different freque
 
 __The bandwidth of a__ ___composite signal___ __is the difference between the highest and the lowest frequencies contained in that signal.__
 
-> EX: 
->
-> AM - bandwidth range from 530 kHz to 1700 kHz, each channel has 10 kHz.
->
+> EX: <br>
+> AM - bandwidth range from 530 kHz to 1700 kHz, each channel has 10 kHz. <br>
 > FM - bandwidth range from 88 MHz to 108 MHz, each channel has 100 kHz.
 
