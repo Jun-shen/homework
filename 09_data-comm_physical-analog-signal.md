@@ -12,6 +12,9 @@
 - frequency (___f___)
     - the number of periods in 1 second (Hz)
     - f=1/T, T=1/f
+    > EX: The period of home electricity supply (60 Hz) is
+    > T = 1/60 = 0.0166 seconds = 16.6 ms
+    > Our eyes can't detect so quick power change.
 - phase (degree)
     - the position of the waveform relative to time 0 (horizontal shifting)
 - wavelength 
