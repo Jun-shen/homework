@@ -80,3 +80,4 @@ __EX: The communication system for waveform information__
 |X4|1110|0010|110|110|
 |X5|1111|0011|111|111|
 
+ ![](fig/22497163_2126752544017112_835404713_o.jpg)
